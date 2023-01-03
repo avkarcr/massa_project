@@ -19,6 +19,6 @@ sudo tee <<EOF >/dev/null $HOME/massa/massa-node/config/config.toml
 [network]
 routable_ip = "$(curl ifconfig.me)"
 EOF
-cd ~/massa/massa-node/massa-node
+cd ~/massa/massa-node
 echo
 ./massa-node
