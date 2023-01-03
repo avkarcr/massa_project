@@ -20,4 +20,7 @@ routable_ip = "$(curl ifconfig.me)"
 EOF
 ln -s ~/massa/massa-node/massa-node /usr/bin/massa-node
 #ln -s ~/massa/massa-node/massa-client /usr/bin/massa-client
+echo
+echo "PWD is: $massa_password"
+sleep 20
 massa-node -p $massa_password
