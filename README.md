@@ -4,6 +4,11 @@
 mkdir -p ~/massa_backup
 cp ~/massa/massa-node/config/node_privkey.key ~/massa_backup/node_privkey.key
 cp ~/massa/massa-client/wallet.dat ~/massa_backup/wallet.dat
+```
+## To delete the node (don't forget to backup) use these commands:
+```
+systemctl stop massad
+systemctl disable massad
 rm -rf ~/massa
 rm -f massa.tar.gz
 ```
