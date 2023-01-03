@@ -8,6 +8,8 @@ echo "To continue type a PASSWORD for your Massa node (save your password manual
 echo "==============================================================================================================================="
 echo
 read -p "Type your Massa password: " massa_password
+echo "export massa_password=\"$massa_password\"" >> ~/.bashrc
+source ~/.bashrc
 apt update && apt upgrade -y
 apt install -y curl htop pkg-config git build-essential libssl-dev libclang-dev-y
 massa_version=$(curl -s "https://api.github.com/repos/massalabs/massa/releases/latest" | grep '"tag_name":' | sed  's/.*\(TEST..*\)\".*/\1/')
