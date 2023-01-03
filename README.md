@@ -80,9 +80,15 @@ Read carefully. You shoud see a **template** for your massa-client (YOUR_DISCORD
 ```
 node_testnet_rewards_program_ownership_proof YOUR_ADDRESS YOUR_DISCORD_ID
 ```
-You will receive the hash-string. Send this string to the massa-bot in Discord.
+You will receive the hash-string. Send this string to the Massa-bot in Discord.
 Bot will tell you "your discord account has been associated with this node ID".
+- send your IP-address to Massa-bot (in Discord!)
+you can take your IP-address from the output (run from terminal):
+```
+wget -qO- eth0.me
+```
 - return to the **massa-client** and buy some rolls (you should **WAIT** for the test tokens to come to your wallet - check balance by `wallet_info`)
+If the faucet is broken it may take an hour or more. It the faucet is working it will take seconds.
 ```
 buy_rolls YOUR_ADDRESS 1 0
 ```
