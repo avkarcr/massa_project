@@ -46,7 +46,7 @@ You can always return to logs by typing "screen -r".
 ```
 ./3_massa_create_service.sh
 ```
-8. Generate password for Massa client (it's your choice to use the same password as for Massa node).
+8. Generate password for Massa client (if you're **updating** your node - use your old password).
 ```
 cd ~/massa/massa-client
 ./massa-client
