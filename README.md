@@ -21,7 +21,9 @@ After running type "CTRL+C" to stop the node and continue installation.
 ```
 ./2_massa_create_pwd.sh
 ```
-6. Create the Massa node service. You will be asked for a password which you created earlier in step 5
+6. Create the Massa node service. You will be asked for a password which you created earlier in step 5.
+After you see runnning node logs, exit the screen by typing "ctrl+a d".
+You can always return to logs by typing "screen -r".
 ```
 ./3_massa_create_service.sh
 ```
