@@ -51,3 +51,25 @@ You can always return to logs by typing "screen -r".
 cd ~/massa/massa-client
 ./massa-client
 ```
+9. **Steps for a new install**
+Type these commands from inside the massa-client:
+- generate your secret keys
+```
+wallet_generate_secret_key
+```
+- write down your **address** and **secret key** (replace *YOUR_SECRET_KEY* and *YOUR_ADDRESS* by your data here below) from:
+```
+wallet_info
+```
+- add secret key staking
+```
+node_add_staking_secret_keys YOUR_SECRET_KEY
+ ```
+- get some test tokens **from Discord channel "testnet-faucet"** by simply typing (in Discord!):
+```
+YOUR_ADDRESS
+```
+- return to the **massa-client** and buy some rolls (you should wait a little for the test tokens to come to your wallet - check by `wallet_info`)
+```
+buy_rolls YOUR_ADDRESS 1 0
+```
