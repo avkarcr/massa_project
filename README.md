@@ -69,7 +69,20 @@ node_add_staking_secret_keys YOUR_SECRET_KEY
 ```
 YOUR_ADDRESS
 ```
-- return to the **massa-client** and buy some rolls (you should wait a little for the test tokens to come to your wallet - check by `wallet_info`)
+- start your conversation with Massa bot **from Discord channel "testnet-rewards-registration"** by simply typing (in Discord!):
+```
+Hi! :) (or anything else - doesn't matter)
+```
+After that you will see the Massa bot dialog in your Discord personal chats.
+Read carefully. You shoud see a **template** for your massa-client (YOUR_DISCORD_ID):
+**node_testnet_rewards_program_ownership_proof YOUR_ADDRESS YOUR_DISCORD_ID**
+- copy the string above (with your address and discord_id) to the **massa-client**:
+```
+node_testnet_rewards_program_ownership_proof YOUR_ADDRESS YOUR_DISCORD_ID
+```
+You will receive the hash-string. Send this string to the massa-bot in Discord.
+Bot will tell you "your discord account has been associated with this node ID".
+- return to the **massa-client** and buy some rolls (you should **WAIT** for the test tokens to come to your wallet - check balance by `wallet_info`)
 ```
 buy_rolls YOUR_ADDRESS 1 0
 ```
