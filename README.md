@@ -6,8 +6,22 @@
 apt install -y screen curl
 screen -S install
 ```
-3. Install the Massa node
+3. Load the scripts for further installation.
 ```
 curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/1_massa_install.sh && chmod +x 1_massa_install.sh
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/2_massa_create_pwd.sh && chmod +x 2_massa_create_pwd.sh
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/3_massa_create_service.sh && chmod +x 3_massa_create_service.sh
+```
+4. Install the Massa node.
+```
 ./1_massa_install.sh
+```
+5. Run the Massa node to create a password.
+After running type "CTRL+C" to stop the node and continue installation.
+```
+./2_massa_create_pwd.sh
+```
+6. Create the Massa node service. You will be asked for a password which you created earlier in step 5
+```
+./3_massa_create_service.sh
 ```
