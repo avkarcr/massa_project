@@ -1,5 +1,5 @@
 # Massa Project install scripts
-## If you update the Massa node - save your files for backup and remove your old node:
+## If you update the Massa node - save your backup files:
 ```
 mkdir -p ~/massa_backup
 cp ~/massa/massa-node/config/node_privkey.key ~/massa_backup/node_privkey.key
