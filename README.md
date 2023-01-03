@@ -7,6 +7,7 @@ cp ~/massa/massa-client/wallet.dat ~/massa_backup/wallet.dat
 ```
 ## To delete the node (don't forget to backup) use these commands:
 ```
+cd ~
 systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
