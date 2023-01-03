@@ -8,6 +8,6 @@ screen -S install
 ```
 3. Install the Massa node
 ```
-curl -sO https://raw.githubusercontent.com/avkarcr/massa_project/main/1_massa_install.sh && chmod +x 1_massa_install.sh
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/1_massa_install.sh && chmod +x 1_massa_install.sh
 ./1_massa_install.sh
 ```
