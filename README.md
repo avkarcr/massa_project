@@ -48,5 +48,6 @@ You can always return to logs by typing "screen -r".
 ```
 8. Generate password for Massa client (it's your choice to use the same password as for Massa node).
 ```
-~/massa/massa-client/massa-client
+cd ~/massa/massa-client
+./massa-client
 ```
