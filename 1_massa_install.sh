@@ -4,12 +4,13 @@ echo "There is a good practice to install the node under the Screen."
 echo "To do that type \"screen -S install\" BEFORE running this script."
 echo "You can always hide the current screen by typing \"ctrl+a d\" (during install process)."
 echo
+echo "After install you will be asked for a password."
+echo "After typing the password press \"ctrl+a d\" to hide the log output and return to the terminal."
+echo
 echo "To continue type ENTER or type type \"ctrl+c\" to exit."
 echo "==============================================================================================================================="
 echo
 read -p "Type ENTER to continue..." dummy
-# echo "export massa_password=\"$massa_password\"" >> ~/.profile
-# source ~/.profile
 apt update && apt upgrade -y
 apt install -y curl htop pkg-config git build-essential libssl-dev libclang-dev
 massa_version=$(curl -s "https://api.github.com/repos/massalabs/massa/releases/latest" | grep '"tag_name":' | sed  's/.*\(TEST..*\)\".*/\1/')
@@ -18,6 +19,6 @@ sudo tee <<EOF >/dev/null $HOME/massa/massa-node/config/config.toml
 [network]
 routable_ip = "$(curl ifconfig.me)"
 EOF
-ln -s ~/massa/massa-node/massa-node /usr/bin/massa-node
-#ln -s ~/massa/massa-node/massa-client /usr/bin/massa-client
-massa-node
+cd ~/massa/massa-node/massa-node
+echo
+./massa-node
