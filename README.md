@@ -51,7 +51,37 @@ You can always return to logs by typing "screen -r".
 cd ~/massa/massa-client
 ./massa-client
 ```
-9. **Steps for a new install**
+9a. **Steps for an UPDATE** (for new install go to step 9b).
+- write down your **address** and **secret key** (replace *YOUR_SECRET_KEY* and *YOUR_ADDRESS* by your data here below) from:
+```
+wallet_info
+```
+- add secret key staking
+```
+node_add_staking_secret_keys YOUR_SECRET_KEY
+ ```
+- get some test tokens **from Discord channel "testnet-faucet"** by simply typing (in Discord!):
+```
+YOUR_ADDRESS
+```
+- send to Massa bot (in Discord!):
+Check your DISCORD_ID in the Massa bot dialog
+```
+node_testnet_rewards_program_ownership_proof YOUR_ADDRESS YOUR_DISCORD_ID
+```
+You will receive the hash-string. Send this string to the Massa-bot in Discord.
+Bot will tell you "your discord account has been associated with this node ID".
+- send your IP-address to Massa-bot (in Discord!)
+you can take your IP-address from the output (run from terminal):
+```
+wget -qO- eth0.me
+```
+- return to the **massa-client** and buy some rolls (you should **WAIT** for the test tokens to come to your wallet - check balance by `wallet_info`)
+If the faucet is broken it may take an hour or more. It the faucet is working it will take seconds.
+```
+buy_rolls YOUR_ADDRESS 1 0
+```
+9b. **Steps for a new install**
 Type these commands from inside the massa-client:
 - generate your secret keys
 ```
