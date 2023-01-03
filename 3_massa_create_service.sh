@@ -17,3 +17,4 @@ WantedBy=multi-user.target" > /etc/systemd/system/massad.service
 systemctl daemon-reload
 systemctl enable massad
 systemctl restart massad
+journalctl -u massad -f
