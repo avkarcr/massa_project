@@ -17,7 +17,7 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/3_massa_c
 ./1_massa_install.sh
 ```
 5. Run the Massa node to create a password.
-After running type "CTRL+C" to stop the node and continue installation.
+After running type "ctrl+c" to stop the node and continue installation.
 ```
 ./2_massa_create_pwd.sh
 ```
