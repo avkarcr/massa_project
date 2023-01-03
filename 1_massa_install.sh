@@ -2,7 +2,7 @@ echo
 echo "==============================================================================================================================="
 echo "There is a good practice to install the node under the Screen."
 echo "To do that type \"screen -S install\" BEFORE running this script."
-echo "You can always hide the current screen by typing \"ctrl+a d\" (during install process).
+echo "You can always hide the current screen by typing \"ctrl+a d\" (during install process)."
 echo
 echo "To continue type a PASSWORD for your Massa node (save your password manually) and press enter OR type type \"ctrl+c\" to exit."
 echo "==============================================================================================================================="
