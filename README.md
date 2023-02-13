@@ -1,4 +1,4 @@
-# Massa Project install scripts
+# Massa Project install scripts (valid for 19.x episode)
 ## If you update the Massa node - save your backup files:
 ```
 mkdir -p ~/massa_backup
@@ -52,13 +52,13 @@ cd ~/massa/massa-client
 ./massa-client
 ```
 9a. **Steps for an UPDATE** (for new install go to step 9b).
-- write down your **address** and **secret key** (replace *YOUR_SECRET_KEY* and *YOUR_ADDRESS* by your data here below) from:
+- write down your **address** (replace *YOUR_ADDRESS* by your data here below) from:
 ```
 wallet_info
 ```
-- add secret key staking
+- add staking
 ```
-node_add_staking_secret_keys YOUR_SECRET_KEY
+node_start_staking YOUR_ADDRESS
  ```
 - get some test tokens **from Discord channel "testnet-faucet"** by simply typing (in Discord!):
 ```
