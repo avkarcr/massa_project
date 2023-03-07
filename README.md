@@ -21,7 +21,7 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_
 ```
 journalctl -u massad.service -f | grep final_state
 ```
-*PLEASE WAIT* a couple of minutes until you begin to catch messages with RED "final state" text
+**PLEASE WAIT** a couple of minutes until you begin to catch messages with RED "final state" text
 2. Press ctrl+c to exit logs.
 3. Run Massa client terminal:
 ```
