@@ -6,7 +6,7 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
-## Procedure:
+## Installation:
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Load the script for further installation.
 ```
@@ -16,7 +16,7 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_
 ```
 ./massa_20_install.sh
 ```
-## Massa node setup:
+## Massa Node Setup:
 1. Run command to follow the node logs:
 ```
 journalctl -u massad.service -f | grep final_state
