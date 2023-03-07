@@ -65,7 +65,7 @@ echo -e "\e[1;32mYour Massa node has been installed!\e[0m"
 echo -e "\e[1;32m-----------------------------------\e[0m"
 echo
 echo
-echo -e "\e[1;32mTo proceed with node setup please follow steps on Github.\e[0m"
+echo -e "\e[1;32mTo proceed with node setup please follow steps on Github (Massa Node Setup section).\e[0m"
 echo
 else
 	echo -e "\e[1;31m-------------------------------------------------------------------\e[0m"
