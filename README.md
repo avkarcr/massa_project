@@ -26,7 +26,7 @@ journalctl -u massad.service -f | grep final_state
 3. Run Massa client terminal:
 ```
 cd ~/massa/massa-client
-. massa-client
+./massa-client
 ```
 4. In the client terminal:
 ```
