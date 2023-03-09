@@ -15,34 +15,7 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_
 ```
 ./massa_20_install.sh
 ```
-## Massa Node Setup (for update):
-1. Run command to follow the node logs:
-```
-journalctl -u massad.service -f | grep final_state
-```
-**PLEASE WAIT** a couple of minutes until you begin to catch messages with RED "final state" text.
-
-2. Press ctrl+c to exit logs.
-3. Run Massa client terminal:
-```
-cd ~/massa/massa-client
-./massa-client
-```
-4. In the client terminal:
-```
-wallet_info
-```
-5. Enter your password to decypher the wallet.
-6. In the client terminal:
-```
-node_start_staking YOUR_ADDRESS
-```
-7. In the Discord: send YOUR_ADDRESS to "testnet-faucet" discord channel".
-8. Repeat step 4 and wait for your balance to fill up with some coins.
-9. In the client terminal:
-```
-buy_rolls YOUR_ADDRESS 1 0
-```
+3. Follow the instructions in *Massa Node Setup* section below.
 ## Installation:
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Load the script for further installation.
@@ -73,7 +46,7 @@ wallet_info
 5. Invent (or use your current one) a password for the client.
 6. If you succeed you will see the message that "your wallet does not contain any key".
 That's ok. For the Episode 20 we must generate a new key.
-7. In the client terminal:
+7. **[ONLY FOR INSTALL]** In the client terminal:
 ```
 wallet_generate_secret_key
 ```
