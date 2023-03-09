@@ -18,7 +18,7 @@ fi
 echo
 echo "==============================================================================================================================="
 echo
-read -p "Type ENTER to continue or type type \"ctrl+c\" to exit." -es dummy
+read -p "Type ENTER to continue or type \"ctrl+c\" to exit." -es dummy
 clear
 echo -e "\e[1;33m--------------------------------------\e[0m"
 echo -e "\e[1;33mCreate a password for your Massa node.\e[0m"
