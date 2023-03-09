@@ -33,9 +33,13 @@ cd ~/massa/massa-client
 wallet_info
 ```
 5. Enter your password to decypher the wallet.
-6. In the Discord: send YOUR_ADDRESS to "testnet-faucet" discord channel".
-7. Repeat step 4 and wait for your balance to fill up with some coins.
-8. In the client terminal:
+6. In the client terminal:
+```
+node_start_staking YOUR_ADDRESS
+```
+7. In the Discord: send YOUR_ADDRESS to "testnet-faucet" discord channel".
+8. Repeat step 4 and wait for your balance to fill up with some coins.
+9. In the client terminal:
 ```
 buy_rolls YOUR_ADDRESS 1 0
 ```
