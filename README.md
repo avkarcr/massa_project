@@ -1,4 +1,4 @@
-# Massa Project install scripts (valid for 20.x episode)
+# Massa Project Install and Update scripts (valid for 20.x episode)
 ## To delete the node (don't forget to backup) use these commands:
 ```
 cd ~
@@ -6,7 +6,7 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
-## UPDATE:
+## UPDATE (any version 20.x):
 1. Load the script.
 ```
 curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_install.sh && chmod +x massa_20_update.sh
