@@ -6,6 +6,39 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
+## UPDATE:
+1. Load the script.
+```
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_install.sh && chmod +x massa_20_update.sh
+```
+2. Run the script.
+```
+./massa_20_install.sh
+```
+## Massa Node Setup (for update):
+1. Run command to follow the node logs:
+```
+journalctl -u massad.service -f | grep final_state
+```
+**PLEASE WAIT** a couple of minutes until you begin to catch messages with RED "final state" text.
+
+2. Press ctrl+c to exit logs.
+3. Run Massa client terminal:
+```
+cd ~/massa/massa-client
+./massa-client
+```
+4. In the client terminal:
+```
+wallet_info
+```
+5. Enter your password to decypher the wallet.
+6. In the Discord: send YOUR_ADDRESS to "testnet-faucet" discord channel".
+7. Repeat step 4 and wait for your balance to fill up with some coins.
+8. In the client terminal:
+```
+buy_rolls YOUR_ADDRESS 1 0
+```
 ## Installation:
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Load the script for further installation.
