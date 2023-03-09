@@ -50,7 +50,8 @@ That's ok. For the Episode 20 we must generate a new key.
 ```
 wallet_generate_secret_key
 ```
-You will YOUR_ADDRESS string. Copy it somewhere.
+You will see YOUR_ADDRESS string. Copy it somewhere.
+
 8. In the client terminal:
 ```
 node_start_staking YOUR_ADDRESS
