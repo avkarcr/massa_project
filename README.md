@@ -83,3 +83,11 @@ buy_rolls YOUR_ADDRESS 1 0
 ```
 
 That's all!
+
+## If you did something wrong or accidentally generated a new key during update process, you may restore your keys from massa_backup folder:
+```
+systemctl stop massad > /dev/null
+cp $HOME/massa_backup/node_privkey.key $HOME/massa/massa-node/config/
+cp $HOME/massa_backup/wallet.dat $HOME/massa/massa-client/
+systemctl start massad > /dev/null
+```
