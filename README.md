@@ -13,7 +13,7 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_
 ```
 2. Run the script.
 ```
-./massa_20_install.sh
+./massa_20_update.sh
 ```
 3. Follow the instructions in *Massa Node Setup* section below.
 ## Installation:
