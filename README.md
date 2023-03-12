@@ -168,9 +168,9 @@ wget -qO- eth0.me
 ```
 12. Вводим в **Discord**: отправляем IP-адрес боту Massa.
 
-13. Repeat step 4 and wait for your balance to fill up with some coins.
+13. Повторяем шаг 4, смотрим вывод и ждем, когда тестовые монетки капнут на кошелек.
 
-14. In the client terminal:
+14. Вводим в **клиенте Massa**:
 ```
 buy_rolls YOUR_ADDRESS 1 0
 ```
