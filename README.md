@@ -29,9 +29,9 @@ sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubuserc
 ## Massa Node Setup:
 1. Run command to follow the node logs:
 ```
-journalctl -u massad.service -f | grep final_state
+journalctl -u massad.service -f
 ```
-**PLEASE WAIT** a couple of minutes until you begin to catch messages with RED "final state" text.
+**PLEASE WAIT** a couple of minutes until you begin to catch messages with the bootstrap OK status.
 
 2. Press ctrl+c to exit logs.
 
@@ -124,9 +124,9 @@ sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubuserc
 ## Настройка ноды Massa:
 1. Вводим команду для просмотра логов. И ждем. Сначала на экране ничего не отобразится. Ждем!
 ```
-journalctl -u massad.service -f | grep final_state
+journalctl -u massad.service -f
 ```
-**ЖДЕМ** пару минут, пока на экране не начнут бежать строки с красным текстом "final_state". Строки красные, но это ХОРОШО, ничего не боимся.
+**ЖДЕМ** пару минут, пока на экране не начнут бежать строки с успешным bootstrap.
 
 2. Теперь (когда видим, что побежали красные строки final_state) жмем ctrl+c и выходим из режима просмотра логов.
 
