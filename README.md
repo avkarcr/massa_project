@@ -16,13 +16,13 @@ sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubuserc
 ./massa_21_update.sh
 ```
 3. Follow the instructions in *Massa Node Setup* section below.
-## Installation:
+## INSTALL the node (21.0):
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Load the script for further installation.
 ```
 curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
 ```
-3. INSTALL the node (21.x):
+3. Run script to install the node:
 ```
 ./massa_21_install.sh
 ```
