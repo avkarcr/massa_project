@@ -1,4 +1,4 @@
-# Massa Project Install and Update scripts (valid for 20.x episode)
+# Massa Project Install and Update scripts (valid for 21.x episode)
 ## To delete the node (don't forget to backup) use these commands:
 ```
 cd ~
@@ -6,25 +6,25 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
-## UPDATE (any version 20.x):
+## UPDATE (any version 21.x):
 1. Load the script.
 ```
-sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_update.sh && chmod +x massa_20_update.sh
+sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_update.sh && chmod +x massa_21_update.sh
 ```
 2. Run the script.
 ```
-./massa_20_update.sh
+./massa_21_update.sh
 ```
 3. Follow the instructions in *Massa Node Setup* section below.
 ## Installation:
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Load the script for further installation.
 ```
-curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_install.sh && chmod +x massa_20_install.sh
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
 ```
 3. Install the Massa node.
 ```
-./massa_20_install.sh
+./massa_21_install.sh
 ```
 ## Massa Node Setup:
 1. Run command to follow the node logs:
@@ -47,7 +47,7 @@ wallet_info
 5. Invent (or use your current one) a password for the client.
 
 6. **[ONLY FOR INSTALL]** You will see the message that "your wallet does not contain any key".
-That's ok. For the Episode 20 we must generate a new key.
+That's ok.
 
 In the client terminal run:
 ```
@@ -92,7 +92,7 @@ cp $HOME/massa_backup/wallet.dat $HOME/massa/massa-client/
 systemctl start massad > /dev/null
 ```
 
-# [РУССКИЙ ЯЗЫК] Установка и обновление ноды Massa версии 20.х
+# [РУССКИЙ ЯЗЫК] Установка и обновление ноды Massa версии 21.х
 ## Для удаления ноды (помним про своевременные бекапы!) введите эти команды:
 ```
 cd ~
@@ -100,14 +100,14 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
-## Инструкция по ОБНОВЛЕНИЮ (для любой подверсии 20.x):
+## Инструкция по ОБНОВЛЕНИЮ (для любой подверсии 21.x):
 1. Скачиваем скрипт.
 ```
-curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_update.sh && chmod +x massa_20_update.sh
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_update.sh && chmod +x massa_21_update.sh
 ```
 2. Запускаем скрипт.
 ```
-./massa_20_update.sh
+./massa_21_update.sh
 ```
 3. Следуем инструкциям в разделе "Настройка ноды Massa".
 
@@ -115,11 +115,11 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_
 1. Вам нужен сервер с ОС Ubuntu 20+.
 2. Скачиваем скрипт для первой установки ноды.
 ```
-curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_20_install.sh && chmod +x massa_20_install.sh
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
 ```
 3. Запусаем скрипт.
 ```
-./massa_20_install.sh
+./massa_21_install.sh
 ```
 ## Настройка ноды Massa:
 1. Вводим команду для просмотра логов. И ждем. Сначала на экране ничего не отобразится. Ждем!
@@ -142,7 +142,7 @@ wallet_info
 5. Придумываем пароль для кошелька Massa (можно использовать такой же пароль, как для ноды - на ваш выбор).
 
 6. **[Этот пункт только для первой установки]** Мы видим надпись "your wallet does not contain any key".
-Это нормально. Для эпизода 20 Massa надо сгенерировать новый ключ. Что и сделаем:
+Это нормально.
 ```
 wallet_generate_secret_key
 ```
