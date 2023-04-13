@@ -6,7 +6,7 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
-## UPDATE (any version 21.x):
+## UPDATE the node (any version 21.x):
 1. Load the script.
 ```
 sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_update.sh && chmod +x massa_21_update.sh
@@ -22,7 +22,7 @@ sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubuserc
 ```
 curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
 ```
-3. Install the Massa node.
+3. INSTALL the node (21.x):
 ```
 ./massa_21_install.sh
 ```
