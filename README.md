@@ -20,7 +20,7 @@ sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubuserc
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Load the script for further installation.
 ```
-curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
+sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
 ```
 3. Run script to install the node:
 ```
@@ -115,7 +115,7 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_
 1. Вам нужен сервер с ОС Ubuntu 20+.
 2. Скачиваем скрипт для первой установки ноды.
 ```
-curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
+sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
 ```
 3. Запусаем скрипт.
 ```
