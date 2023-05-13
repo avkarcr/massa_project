@@ -1,4 +1,4 @@
-# Massa Project Install and Update scripts (valid for 21.x episode)
+# Massa Project Install and Update scripts (valid for 22.x episode)
 ## To delete the node (don't forget to backup) use these commands:
 ```
 cd ~
@@ -6,25 +6,25 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
-## UPDATE the node (any version 21.x):
+## UPDATE the node (any version 22.x):
 1. Load the script.
 ```
-sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_update.sh && chmod +x massa_21_update.sh
+sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_22_update.sh && chmod +x massa_22_update.sh
 ```
 2. Run the script.
 ```
-./massa_21_update.sh
+./massa_22_update.sh
 ```
 3. Follow the instructions in *Massa Node Setup* section below.
-## INSTALL the node (21.0):
+## INSTALL the node (22.0):
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Load the script for further installation.
 ```
-sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
+sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_22_install.sh && chmod +x massa_22_install.sh
 ```
 3. Run script to install the node:
 ```
-./massa_21_install.sh
+./massa_22_install.sh
 ```
 ## Massa Node Setup:
 1. Run command to follow the node logs:
@@ -92,7 +92,7 @@ cp $HOME/massa_backup/wallet.dat $HOME/massa/massa-client/
 systemctl start massad > /dev/null
 ```
 
-# [РУССКИЙ ЯЗЫК] Установка и обновление ноды Massa версии 21.х
+# [РУССКИЙ ЯЗЫК] Установка и обновление ноды Massa версии 22.х
 ## Для удаления ноды (помним про своевременные бекапы!) введите эти команды:
 ```
 cd ~
@@ -100,14 +100,14 @@ systemctl stop massad
 systemctl disable massad
 rm -rf ~/massa
 ```
-## Инструкция по ОБНОВЛЕНИЮ (для любой подверсии 21.x):
+## Инструкция по ОБНОВЛЕНИЮ (для любой подверсии 22.x):
 1. Скачиваем скрипт.
 ```
-curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_update.sh && chmod +x massa_21_update.sh
+curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_22_update.sh && chmod +x massa_22_update.sh
 ```
 2. Запускаем скрипт.
 ```
-./massa_21_update.sh
+./massa_22_update.sh
 ```
 3. Следуем инструкциям в разделе "Настройка ноды Massa".
 
@@ -115,11 +115,11 @@ curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_
 1. Вам нужен сервер с ОС Ubuntu 20+.
 2. Скачиваем скрипт для первой установки ноды.
 ```
-sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_21_install.sh && chmod +x massa_21_install.sh
+sudo apt update && sudo apt install curl -y && curl -sLO https://raw.githubusercontent.com/avkarcr/massa_project/main/massa_22_install.sh && chmod +x massa_22_install.sh
 ```
 3. Запусаем скрипт.
 ```
-./massa_21_install.sh
+./massa_22_install.sh
 ```
 ## Настройка ноды Massa:
 1. Вводим команду для просмотра логов. И ждем. Сначала на экране ничего не отобразится. Ждем!
