@@ -15,7 +15,7 @@ sudo apt update && apt upgrade -y
 massa_version=$(curl -s "https://api.github.com/repos/massalabs/massa/releases/latest" | grep '"tag_name":' | sed  's/.*\(TEST..*\)\".*/\1/')
 wget -qO massa.tar.gz https://github.com/massalabs/massa/releases/download/$massa_version/massa_${massa_version}_release_linux.tar.gz &&  tar zxvf massa.tar.gz && rm -f massa.tar.gz
 sudo tee <<EOF >/dev/null $HOME/massa/massa-node/config/config.toml
-[network]
+[protocol]
 routable_ip = "$(curl ifconfig.me)"
 EOF
 cp ~/massa_backup/node_privkey.key ~/massa/massa-node/config/node_privkey.key
